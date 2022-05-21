@@ -1,0 +1,36 @@
+# Visualisation
+#/control/execute mac/visu.mac
+
+# Verbosity
+/control/execute mac/verbose.mac
+
+# Geometry
+/control/execute mac/geometry.mac
+
+# Physics
+/control/execute mac/physics.mac
+
+# Output
+/control/execute mac/output.mac
+
+# Initialisation
+/gate/run/initialize
+
+# Source
+/control/execute mac/sources.mac
+
+# Random
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed auto
+
+# verbose
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+# Start acquisition
+/gate/application/setTimeStart 0 s
+/gate/application/setTimeSlice 60 s
+/gate/application/setTimeStop  120 s
+/gate/application/startDAQ
+
