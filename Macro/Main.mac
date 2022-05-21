@@ -1,5 +1,5 @@
 # Visualisation
-#/control/execute mac/visu.mac
+/control/execute mac/visu.mac
 
 # Verbosity
 /control/execute mac/verbose.mac
@@ -22,11 +22,6 @@
 # Random
 /gate/random/setEngineName MersenneTwister
 /gate/random/setEngineSeed auto
-
-# verbose
-/run/verbose 0
-/event/verbose 0
-/tracking/verbose 0
 
 # Start acquisition
 /gate/application/setTimeStart 0 s
