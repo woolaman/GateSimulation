@@ -1,31 +1,26 @@
 # Visualisation
-/control/execute mac/visu.mac
+/control/execute Visualisation.mac
 
 # Verbosity
-/control/execute mac/verbose.mac
+/control/execute Verbose.mac
 
 # Geometry
-/control/execute mac/geometry.mac
+/control/execute Geometry.mac
 
 # Physics
-/control/execute mac/physics.mac
+/control/execute Physics.mac
 
 # Output
-/control/execute mac/output.mac
+/control/execute Output.mac
 
 # Initialisation
 /gate/run/initialize
 
 # Source
-/control/execute mac/sources.mac
+/control/execute Source.mac
 
 # Random
-/gate/random/setEngineName MersenneTwister
-/gate/random/setEngineSeed auto
+/control/execute Random.mac
 
 # Start acquisition
-/gate/application/setTimeStart 0 s
-/gate/application/setTimeSlice 60 s
-/gate/application/setTimeStop  120 s
-/gate/application/startDAQ
-
+/control/execute StartDAQ.mac
